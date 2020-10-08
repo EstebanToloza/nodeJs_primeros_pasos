@@ -1,0 +1,27 @@
+{
+  "name": "nodeJs_primeros_pasos",
+  "version": "1.0.0",
+  "description": "Empezando con NodeJs - Primeras configuraciones",
+  "main": "server.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EstebanToloza/nodeJs_primeros_pasos.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EstebanToloza/nodeJs_primeros_pasos/issues"
+  },
+  "homepage": "https://github.com/EstebanToloza/nodeJs_primeros_pasos#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
