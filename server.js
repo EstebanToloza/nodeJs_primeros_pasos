@@ -32,7 +32,7 @@ server.get("/mostrar", async (request, response) => {
 
     const productos = await baseDeProductos.list()
 
-    console.log(productos)
+    ressponse.json(productos)
 
     response.end("acá hay que mostrar los productos...")
 })
