@@ -3,9 +3,7 @@ const express = require('express') //requiere que importe el paquete express ins
 //import easyDB from 'easydb-io'
 const easyDB = require('easydb-io')
 
-
 const server = express() //el módulo express ejecutado se guarda en server
-
 
 const docs = express.static("docs") //configuramos la ruta para que express "busque" los archivos estáticos
 const urlenconded = express.urlencoded({ extended: true }) //configuración cuando la información la envía un form, la convierte a object
