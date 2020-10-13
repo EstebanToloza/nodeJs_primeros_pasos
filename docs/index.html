@@ -67,9 +67,10 @@
 						return articulo
 					})
 
-					const filtrados = productos.filter( producto => producto.getAttribute('data-price') > 500 && producto.getAttribute('data-price') < 1000)
-					
-					filtrados.forEach( producto => document.querySelector('#productos-destacados').appendChild(producto))
+					//const filtrados = productos.filter( producto => producto.getAttribute('data-price') > 500 && producto.getAttribute('data-price') < 1000)
+								//FILTRO POR PRECIOS. FALTA DESARROLLO.
+					//filtrados.forEach( producto => document.querySelector('#productos-destacados').appendChild(producto))
+					productos.forEach( producto => document.querySelector('#productos-destacados').appendChild(producto))
 
 				} catch(error){
 					alert("Ahhh...no tengo productos!")
@@ -93,7 +94,7 @@
 				})
 
 				} catch(error){
-					 alert("Ahhh...no tengo productos!")
+					alert("Ahhh...no tengo productos!")
 				} */
 				
 			}
@@ -152,12 +153,10 @@
 
 				await fetch("http://localhost:2000/agregar", configs)
 			}
-
 			document.querySelector("#agregar-producto").onclick = crearProducto
 			
-
 			window.onload = cargarCatalogo
-
+			
 		</script>
 	</body>
 </html>
